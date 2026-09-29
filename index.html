@@ -154,7 +154,7 @@ footer{text-align:center;color:var(--ink3);font-size:13px;padding:30px}
       <div class="rank">01</div>
       <h3>RockID</h3>
       <p class="hook">Point your phone at a rock. Get a geologist's walkthrough.</p>
-      <p>You take a photo and a vision model finds the features: the feldspar, the quartz vein, the weathering rind. Each one comes back as a box on the photo. The app then gives you a guided tour, flying the camera to each feature in turn with an explanation underneath.</p>
+      <p>You take a photo and a vision model finds the features: the grain texture, the rusty iron staining, the dark mineral streaks along hairline cracks. Each one comes back as a box on the photo. The app then gives you a guided tour, flying the camera to each feature in turn with an explanation underneath.</p>
       <ul>
         <li><b>Where you found it matters.</b> GPS is read from the photo, reverse-geocoded, and turned into local bedrock context: native stone, glacial erratic, or beach cobble carried in.</li>
         <li><b>Built for bad signal.</b> Identification runs as a server-side job. The phone can lock, switch apps or lose the network and the answer still arrives, with cancel and one-tap retry.</li>
@@ -162,24 +162,7 @@ footer{text-align:center;color:var(--ink3);font-size:13px;padding:30px}
       </ul>
       <div class="tags"><span>Java / Android</span><span>Node / Express</span><span>Claude vision</span><span>job queue</span><span>Nominatim</span></div>
     </div>
-    <div class="art" aria-label="Illustration of the RockID feature tour">
-      <svg viewBox="0 0 400 300">
-        <defs>
-          <radialGradient id="rk" cx="45%" cy="40%" r="65%"><stop offset="0" stop-color="#9a8f86"/><stop offset=".6" stop-color="#6a5f58"/><stop offset="1" stop-color="#3a332f"/></radialGradient>
-          <mask id="spot"><rect width="400" height="300" fill="#fff"/><circle cx="238" cy="118" r="42" fill="#000"/></mask>
-        </defs>
-        <rect width="400" height="300" fill="#12161c"/>
-        <path d="M70 190 C60 120 120 70 200 72 C290 74 340 120 330 185 C320 245 250 262 190 258 C120 254 78 236 70 190Z" fill="url(#rk)"/>
-        <path d="M120 120 L300 200" stroke="#e9e3da" stroke-width="7" opacity=".75"/>
-        <g fill="#d9a38a" opacity=".85"><circle cx="150" cy="170" r="7"/><circle cx="175" cy="200" r="5"/><circle cx="245" cy="120" r="8"/><circle cx="228" cy="108" r="5"/><circle cx="262" cy="132" r="4"/><circle cx="280" cy="170" r="6"/></g>
-        <rect width="400" height="300" fill="#000" opacity=".55" mask="url(#spot)"/>
-        <circle cx="238" cy="118" r="42" fill="none" stroke="#ff8a3d" stroke-width="2.5"/>
-        <rect x="40" y="226" width="320" height="56" rx="10" fill="#141a23" stroke="#2b3542"/>
-        <text x="56" y="249" fill="#fff" font-size="14" font-weight="700" font-family="system-ui">2 / 6 · Pink K-feldspar</text>
-        <text x="56" y="269" fill="#b4bcc6" font-size="12" font-family="system-ui">Large salmon crystals: a slow-cooled granite</text>
-        <g fill="#ff8a3d"><circle cx="186" cy="18" r="3.5" opacity=".4"/><circle cx="198" cy="18" r="3.5"/><circle cx="210" cy="18" r="3.5" opacity=".4"/><circle cx="222" cy="18" r="3.5" opacity=".4"/></g>
-      </svg>
-    </div>
+    <div class="shots phones"><img src="img/rock1.jpg" alt="RockID result: quartzite pebble with six numbered features and a plain-language explanation" loading="lazy"><img src="img/rock2.jpg" alt="RockID tour zoomed on feature 1, sugary granular surface" loading="lazy"><img src="img/rock3.jpg" alt="RockID tour zoomed on feature 3, iron staining" loading="lazy"></div>
   </article>
 
   <article class="proj flip reveal" style="--glow:#3fd0a822;--gx:15%">
