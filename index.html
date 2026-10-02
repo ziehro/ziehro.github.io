@@ -334,9 +334,26 @@ footer{text-align:center;color:var(--ink3);font-size:13px;padding:30px}
     </div>
   </article>
 
-  <article class="proj flip reveal" style="--glow:#ff8a3d22;--gx:15%">
+  <article class="proj flip reveal" style="--glow:#3fd0a822;--gx:15%">
     <div class="copy">
       <div class="rank">04</div>
+      <h3>Field Hunch</h3>
+      <p class="hook">The farmer marks the bad spots. The satellite works out why.</p>
+      <p>Satellite tools usually start from the image and guess. This one starts from what the farmer already knows. You draw your field, mark the problem spots and the good ground, and add what went on it. For each zone it pulls five summers of Sentinel-2 imagery (NDVI, NDMI, NDRE), elevation and rainfall, compares the zone with the rest of the field, and ranks the likely causes with the evidence for each one.</p>
+      <ul>
+        <li><b>It can disagree with you.</b> If the satellite doesn't see a zone as worse, it says so and suggests what else could explain it, like a one-off bad year or a zone drawn a bit off the problem.</li>
+        <li><b>Causes come with a test.</b> Ponding, for example, is backed by spring moisture and by whether the gap grows in wet years. Every cause ends in a "Check:" step, not a verdict.</li>
+        <li><b>Soil tests are an optional add-on.</b> Lab numbers for a bad zone and a good one re-rank the causes instantly. A salty reading moves salinity above ponding without a new satellite run.</li>
+      </ul>
+      <div class="tags"><span>Python / Flask</span><span>Sentinel-2 STAC</span><span>rasterio</span><span>Leaflet draw</span><span>DEM terrain</span><span>job queue</span></div>
+      <div class="links"><a href="https://nimpact.ca/farm-reports/hunch/">Try it</a></div>
+    </div>
+    <div class="shots"><img src="img/hunch_map.jpg" style="width:58%;align-self:flex-start" alt="Field Hunch heat map of a central Alberta field with a farmer-drawn problem zone (red) and good zone (green)" loading="lazy"><img src="img/hunch_result.jpg" style="width:38%" alt="Field Hunch results: the satellite doesn't see the problem zone as worse and points to a one-off bad year" loading="lazy"></div>
+  </article>
+
+  <article class="proj reveal" style="--glow:#ff8a3d22">
+    <div class="copy">
+      <div class="rank">05</div>
       <h3>Joules per Answer</h3>
       <p class="hook">What does one local AI answer cost in electricity?</p>
       <p>Every local LLM generation on the server is wrapped in CPU and memory power readings (Intel RAPL), minus an idle baseline measured every 15 minutes. The ledger is published live, and a daily honesty check fails loudly if the meter stops reading.</p>
@@ -355,9 +372,9 @@ footer{text-align:center;color:var(--ink3);font-size:13px;padding:30px}
     </div>
   </article>
 
-  <article class="proj reveal" style="--glow:#6aa8ff22">
+  <article class="proj flip reveal" style="--glow:#6aa8ff22;--gx:15%">
     <div class="copy">
-      <div class="rank">05</div>
+      <div class="rank">06</div>
       <h3>Coastal Ground Truth</h3>
       <p class="hook">What people report on the beach, compared with what the satellite sees.</p>
       <p>This started as an analysis of 250 North American beaches: composition, wildlife and driftwood from BeachBook contributions. It's now the ground-truth layer checked against Sentinel-2 scenes for the same stretches of coast.</p>
